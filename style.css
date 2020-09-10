@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: monospace;
+    font-family: arial;
     overflow-Y: hidden;
 }
 .header{
@@ -16,14 +16,16 @@ overflow-X: hidden;
     min-height: 100%;
     opacity: 0.5;
 }
-.text{
+h1{
     position: absolute;
-    width: 50%;
-    height: 50%;
+    color: black;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    text-shadow: 0 0 6px white;
-    color: black;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
 }
 .dots{
     position: absolute;
