@@ -23,9 +23,11 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    width: 100px;
-    height: 100px;
     z-index: 5;
+    transition: .3s linear;
+}
+h1:hover{
+    color: green;
 }
 .dots{
     position: absolute;

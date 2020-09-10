@@ -1,4 +1,4 @@
-const ImageSlider = [{
+const imageSlider = [{
     img: "images/bee.jpg",
     text:"LIGHT"
 },
@@ -28,13 +28,14 @@ let active = 0;
 
 const changeBanner = () => {
 active++;
-if(active === ImageSlider.length){
+if(active === imageSlider.length){
     active = 0;
 }
-image.src = ImageSlider[active].img;
-h1.textContent = ImageSlider[active].text;
+imgs.src = imageSlider[active].img;
+h1.textContent = imageSlider[active].text;
 }
 
 
 
-setInterval(changeBanner, time)
+setInterval(changeBanner, time);
+//////////////////////////////////////////////////////
