@@ -26,6 +26,12 @@ const h1 = document.querySelector("h1");
 const time = 3500;
 let active = 0;
 
+
+const changeDot = () => {
+    
+}
+
+
 const changeBanner = () => {
 active++;
 if(active === imageSlider.length){
@@ -38,4 +44,7 @@ h1.textContent = imageSlider[active].text;
 
 
 setInterval(changeBanner, time);
+
+
+setInterval(changeDot, time)
 //////////////////////////////////////////////////////
