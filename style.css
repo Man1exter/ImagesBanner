@@ -16,7 +16,7 @@ overflow-X: hidden;
     min-height: 100%;
     opacity: 0.5;
 }
-h1{
+.text{
     position: absolute;
     width: 50%;
     height: 50%;
@@ -24,7 +24,6 @@ h1{
     font-size: 50px;
     text-shadow: 0 0 6px white;
     color: black;
-    z-index: 2;
 }
 .dots{
     position: absolute;
