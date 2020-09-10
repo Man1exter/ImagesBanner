@@ -32,7 +32,7 @@ h1{
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    overflow: inherit;
+   
 }
 .dots span{
     display: inline-block;
@@ -42,13 +42,18 @@ h1{
     height: 10px;
     border-radius: 50%;
     box-shadow:  0 0 0 5px white;
-    overflow: inherit;
+    transition: .2s linear;
+    border: 5px solid green;
+    
 }
 .dots span.active{
     box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
-    overflow: inherit;
-}
 
+}
+span:hover{
+    background-color: yellow;
+    border: 5px solid green;
+}
 
 
 
