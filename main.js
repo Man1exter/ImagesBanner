@@ -22,13 +22,17 @@ const imageSlider = [{
 
 const imgs = document.querySelector("img");
 const h1 = document.querySelector("h1");
+const dots = [...document.querySelectorAll('.dots span')]
+
 
 const time = 3500;
 let active = 0;
 
 
 const changeDot = () => {
-    
+    const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
+    dots[activeDot].classList.remove('active');
+    dots[active].classList.add('active');
 }
 
 
