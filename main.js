@@ -25,7 +25,7 @@ const h1 = document.querySelector("h1");
 const dots = [...document.querySelectorAll('.dots span')]
 
 
-const time = 3500;
+const time = 5500;
 let active = 0;
 
 
