@@ -58,6 +58,14 @@ setInterval(changeBanner, time);
 const changeKeySlide = (e) => {
 if(e.keyCode == 37 || e.keyCode == 39){
     e.keyCode == 39 ? active-- : active++;
-}
+    
+    if(active === imageSlider.length){
+        active = 0;
+    } 
+    else if (active < 0){
+        active = imageSlider.length - 1;
+      }
+
+   }
 }
 window.addEventListener("keydown", changeKeySlide)
