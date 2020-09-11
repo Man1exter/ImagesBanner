@@ -45,27 +45,35 @@ imgs.src = imageSlider[active].img;
 h1.textContent = imageSlider[active].text;
 changeDot()
 }
-
-
-
-setInterval(changeBanner, time);
-//*//////////////////////////////////////////////////////*
-//*//////////////////////////////////////////////////////*
-//*//////////////////////////////////////////////////////*
-
-
+let indexInterval = setInterval(changeBanner, time)
 
 const changeKeySlide = (e) => {
-if(e.keyCode == 37 || e.keyCode == 39){
-    e.keyCode == 39 ? active-- : active++;
+    if(e.keyCode == 37 || e.keyCode == 39){
+        e.keyCode == 37 ? active-- : active++;
+        
+        if(active === imageSlider.length){
+            active = 0;
+        } 
+        else if (active < 0){
+            active = imageSlider.length - 1;
+          }
     
-    if(active === imageSlider.length){
-        active = 0;
-    } 
-    else if (active < 0){
-        active = imageSlider.length - 1;
-      }
 
-   }
+imgs.src = imageSlider[active].img;
+h1.textContent = imageSlider[active].text;
+changeDot()
+indexInterval = setInterval(changeBanner, time);
 }
+
+}
+
 window.addEventListener("keydown", changeKeySlide)
+
+
+//*//////////////////////////////////////////////////////*
+//*//////////////////////////////////////////////////////*
+//*//////////////////////////////////////////////////////*
+
+
+
+
